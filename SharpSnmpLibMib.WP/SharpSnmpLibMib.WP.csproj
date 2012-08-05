@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{406429CE-BA82-42D5-B2FB-79295F20DE19}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lextm.SharpSnmpLib</RootNamespace>
+    <AssemblyName>SharpSnmpLib.Mib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mib\AgentCapabilities.cs" />
+    <Compile Include="Mib\Assembler.cs" />
+    <Compile Include="Mib\Choice.cs" />
+    <Compile Include="Mib\DefaultObjectRegistry.LoadDefaultModules.Silverlight.cs" />
+    <Compile Include="Mib\DefaultObjectRegistry.cs" />
+    <Compile Include="Mib\Definition.cs" />
+    <Compile Include="Mib\Exports.cs" />
+    <Compile Include="Mib\Imports.cs" />
+    <Compile Include="Mib\ImportsFrom.cs" />
+    <Compile Include="Mib\Integer.cs" />
+    <Compile Include="Mib\ITypeAssignment.cs" />
+    <Compile Include="Mib\Lexer.cs" />
+    <Compile Include="Mib\Macro.cs" />
+    <Compile Include="Mib\MibDocument.cs" />
+    <Compile Include="Mib\MibException.cs" />
+    <Compile Include="Mib\MibModule.cs" />
+    <Compile Include="Mib\ModuleCompliance.cs" />
+    <Compile Include="Mib\ModuleIdentity.cs" />
+    <Compile Include="Mib\ModuleLoader.cs" />
+    <Compile Include="Mib\NotificationGroup.cs" />
+    <Compile Include="Mib\NotificationType.cs" />
+    <Compile Include="Mib\ObjectGroup.cs" />
+    <Compile Include="Mib\ObjectIdentity.cs" />
+    <Compile Include="Mib\ObjectRegistryBase.cs" />
+    <Compile Include="Mib\ObjectTree.cs" />
+    <Compile Include="Mib\ObjectType.cs" />
+    <Compile Include="Mib\OidValueAssignment.cs" />
+    <Compile Include="Mib\Parser.cs" />
+    <Compile Include="Mib\ReloadableObjectRegistry.cs" />
+    <Compile Include="Mib\Sequence.cs" />
+    <Compile Include="Mib\Symbol.cs" />
+    <Compile Include="Mib\TextualConvention.cs" />
+    <Compile Include="Mib\TrapType.cs" />
+    <Compile Include="Mib\TypeAssignment.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="silverlight-patches\StopWatch.Silverlight.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SNMPV2-CONF.module" />
+    <None Include="Resources\SNMPV2-MIB.module" />
+    <None Include="Resources\SNMPV2-SMI.module" />
+    <None Include="Resources\SNMPV2-TC.module" />
+    <None Include="Resources\SNMPV2-TM.module" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpSnmpLib.WP\SharpSnmpLib.WP.csproj">
+      <Project>{726CE0DE-8188-4A28-B9EB-8FD42FBB1BC2}</Project>
+      <Name>SharpSnmpLib.WP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{726CE0DE-8188-4A28-B9EB-8FD42FBB1BC2}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lextm.SharpSnmpLib</RootNamespace>
+    <AssemblyName>SharpSnmpLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ByteTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefinitionType.Silverlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnmpType.Silverlight.cs" />
+    <Compile Include="Counter32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Counter64.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EndOfMibView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gauge32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GenericCode.Silverlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetBulkRequestPdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetNextRequestPdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetRequestPdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetResponsePdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Header.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IConstruct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InformRequestPdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Integer32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Integer64.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IObjectRegistry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IObjectTree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISnmpData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISnmpPdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MalformedPdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\Discovery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\GetBulkRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\GetNextRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\GetRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\GetResponseMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\InformRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ISnmpMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\MalformedMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\MessageFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\MessageFactoryException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ReportMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ResponseMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\SetRequestMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\SnmpMessageExtension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\TimeoutException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\TrapV1Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\TrapV2Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NoSuchInstance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NoSuchObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Null.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectIdentifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectIdentifierConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OctetString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opaque.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportPdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResponsePdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scope.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecurityParameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\AESPrivacyProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\DecryptionException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\DefaultAuthenticationProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\DefaultPrivacyProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\DESPrivacyProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\IAuthenticationProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\IPrivacyProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\Levels.Silverlight.cs" />
+    <Compile Include="Security\MD5AuthenticationProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\PrivacyProviderExtension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\SaltGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\SHA1AuthenticationProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\User.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\UserRegistry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetRequestPdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnmpException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeTicks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrapV1Pdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrapV2Pdu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Variable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VersionCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Silverlight.Patches\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

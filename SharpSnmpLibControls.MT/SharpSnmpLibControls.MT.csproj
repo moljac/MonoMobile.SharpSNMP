@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6DF62705-FBF3-42A5-B827-5CE47A391308}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Lextm.SharpSnmpLib</RootNamespace>
+    <AssemblyName>SharpSnmpLib.Controls</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\AgentFoundEventArgs.cs">
+      <Link>Messaging\AgentFoundEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\DefaultListenerAdapter.cs">
+      <Link>Messaging\DefaultListenerAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\Discoverer.cs">
+      <Link>Messaging\Discoverer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\ExceptionRaisedEventArgs.cs">
+      <Link>Messaging\ExceptionRaisedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\IListenerAdapter.cs">
+      <Link>Messaging\IListenerAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\IListenerBinding.cs">
+      <Link>Messaging\IListenerBinding.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\Listener.cs">
+      <Link>Messaging\Listener.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\ListenerBinding.cs">
+      <Link>Messaging\ListenerBinding.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\Manager.cs">
+      <Link>Messaging\Manager.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\ManagerV1ListenerAdapter.cs">
+      <Link>Messaging\ManagerV1ListenerAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\ManagerV2ListenerAdapter.cs">
+      <Link>Messaging\ManagerV2ListenerAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\ManagerV3ListenerAdapter.cs">
+      <Link>Messaging\ManagerV3ListenerAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\MessageParams.cs">
+      <Link>Messaging\MessageParams.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\MessageReceivedEventArgs.cs">
+      <Link>Messaging\MessageReceivedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\Messenger.cs">
+      <Link>Messaging\Messenger.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\NumberGenerator.cs">
+      <Link>Messaging\NumberGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Messaging\PortInUseException.cs">
+      <Link>Messaging\PortInUseException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysContact.cs">
+      <Link>Objects\SysContact.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysDescr.cs">
+      <Link>Objects\SysDescr.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysLocation.cs">
+      <Link>Objects\SysLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysName.cs">
+      <Link>Objects\SysName.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysObjectId.cs">
+      <Link>Objects\SysObjectId.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysORDescr.cs">
+      <Link>Objects\SysORDescr.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysORID.cs">
+      <Link>Objects\SysORID.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysORIndex.cs">
+      <Link>Objects\SysORIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysORLastChange.cs">
+      <Link>Objects\SysORLastChange.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysORTable.cs">
+      <Link>Objects\SysORTable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysORUpTime.cs">
+      <Link>Objects\SysORUpTime.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysServices.cs">
+      <Link>Objects\SysServices.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Objects\SysUpTime.cs">
+      <Link>Objects\SysUpTime.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\ComposedMembershipProvider.cs">
+      <Link>Pipeline\ComposedMembershipProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\EngineGroup.cs">
+      <Link>Pipeline\EngineGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\GetBulkMessageHandler.cs">
+      <Link>Pipeline\GetBulkMessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\GetMessageHandler.cs">
+      <Link>Pipeline\GetMessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\GetNextMessageHandler.cs">
+      <Link>Pipeline\GetNextMessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\GetNextV1MessageHandler.cs">
+      <Link>Pipeline\GetNextV1MessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\GetV1MessageHandler.cs">
+      <Link>Pipeline\GetV1MessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\HandlerMapping.cs">
+      <Link>Pipeline\HandlerMapping.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\ILogger.cs">
+      <Link>Pipeline\ILogger.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\IMembershipProvider.cs">
+      <Link>Pipeline\IMembershipProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\IMessageHandler.cs">
+      <Link>Pipeline\IMessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\InformMessageHandler.cs">
+      <Link>Pipeline\InformMessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\ISnmpObject.cs">
+      <Link>Pipeline\ISnmpObject.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\MessageHandlerFactory.cs">
+      <Link>Pipeline\MessageHandlerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\NormalSnmpContext.cs">
+      <Link>Pipeline\NormalSnmpContext.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\NullMessageHandler.cs">
+      <Link>Pipeline\NullMessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\ObjectStore.cs">
+      <Link>Pipeline\ObjectStore.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\ScalarObject.cs">
+      <Link>Pipeline\ScalarObject.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SecureSnmpContext.cs">
+      <Link>Pipeline\SecureSnmpContext.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SetMessageHandler.cs">
+      <Link>Pipeline\SetMessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SetV1MessageHandler.cs">
+      <Link>Pipeline\SetV1MessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SnmpApplication.cs">
+      <Link>Pipeline\SnmpApplication.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SnmpApplicationFactory.cs">
+      <Link>Pipeline\SnmpApplicationFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SnmpContext.cs">
+      <Link>Pipeline\SnmpContext.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SnmpContextFactory.cs">
+      <Link>Pipeline\SnmpContextFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SnmpEngine.cs">
+      <Link>Pipeline\SnmpEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\SnmpObject.cs">
+      <Link>Pipeline\SnmpObject.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\TableObject.cs">
+      <Link>Pipeline\TableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\TrapV1MessageHandler.cs">
+      <Link>Pipeline\TrapV1MessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\TrapV2MessageHandler.cs">
+      <Link>Pipeline\TrapV2MessageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\Version1MembershipProvider.cs">
+      <Link>Pipeline\Version1MembershipProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\Version2MembershipProvider.cs">
+      <Link>Pipeline\Version2MembershipProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls.WP\Pipeline\Version3MembershipProvider.cs">
+      <Link>Pipeline\Version3MembershipProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls\Messaging\WalkMode.Serializable.cs">
+      <Link>Messaging\WalkMode.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibControls\Pipeline\AccessFailureException.Serializable.cs">
+      <Link>Pipeline\AccessFailureException.Serializable.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpSnmpLib.MT\SharpSnmpLib.MT.csproj">
+      <Project>{A1141C3B-D6C5-4862-BC9B-7283F5B88742}</Project>
+      <Name>SharpSnmpLib.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="44c46f5e-c84b-41b7-998d-ae3fba09fc16" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

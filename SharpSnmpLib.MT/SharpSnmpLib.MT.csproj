@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1141C3B-D6C5-4862-BC9B-7283F5B88742}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Lextm.SharpSnmpLib</RootNamespace>
+    <AssemblyName>SharpSnmpLib</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharpSnmpLib.WP\ByteTool.cs">
+      <Link>ByteTool.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Counter32.cs">
+      <Link>Counter32.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Counter64.cs">
+      <Link>Counter64.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\DataFactory.cs">
+      <Link>DataFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\EndOfMibView.cs">
+      <Link>EndOfMibView.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\ErrorCode.cs">
+      <Link>ErrorCode.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Gauge32.cs">
+      <Link>Gauge32.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\GetBulkRequestPdu.cs">
+      <Link>GetBulkRequestPdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\GetNextRequestPdu.cs">
+      <Link>GetNextRequestPdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\GetRequestPdu.cs">
+      <Link>GetRequestPdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\GetResponsePdu.cs">
+      <Link>GetResponsePdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Header.cs">
+      <Link>Header.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\IConstruct.cs">
+      <Link>IConstruct.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\IDefinition.cs">
+      <Link>IDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\IEntity.cs">
+      <Link>IEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\IModule.cs">
+      <Link>IModule.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\InformRequestPdu.cs">
+      <Link>InformRequestPdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Integer32.cs">
+      <Link>Integer32.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Integer64.cs">
+      <Link>Integer64.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\IObjectRegistry.cs">
+      <Link>IObjectRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\IObjectTree.cs">
+      <Link>IObjectTree.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\IP.cs">
+      <Link>IP.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\ISegment.cs">
+      <Link>ISegment.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\ISnmpData.cs">
+      <Link>ISnmpData.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\ISnmpPdu.cs">
+      <Link>ISnmpPdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\MalformedPdu.cs">
+      <Link>MalformedPdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\Discovery.cs">
+      <Link>Messaging\Discovery.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\ErrorException.cs">
+      <Link>Messaging\ErrorException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\GetBulkRequestMessage.cs">
+      <Link>Messaging\GetBulkRequestMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\GetNextRequestMessage.cs">
+      <Link>Messaging\GetNextRequestMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\GetRequestMessage.cs">
+      <Link>Messaging\GetRequestMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\GetResponseMessage.cs">
+      <Link>Messaging\GetResponseMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\InformRequestMessage.cs">
+      <Link>Messaging\InformRequestMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\ISnmpMessage.cs">
+      <Link>Messaging\ISnmpMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\MalformedMessage.cs">
+      <Link>Messaging\MalformedMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\MessageFactory.cs">
+      <Link>Messaging\MessageFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\MessageFactoryException.cs">
+      <Link>Messaging\MessageFactoryException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\ReportMessage.cs">
+      <Link>Messaging\ReportMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\ResponseMessage.cs">
+      <Link>Messaging\ResponseMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\SetRequestMessage.cs">
+      <Link>Messaging\SetRequestMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\SnmpMessageExtension.cs">
+      <Link>Messaging\SnmpMessageExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\TimeoutException.cs">
+      <Link>Messaging\TimeoutException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\TrapV1Message.cs">
+      <Link>Messaging\TrapV1Message.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Messaging\TrapV2Message.cs">
+      <Link>Messaging\TrapV2Message.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\NoSuchInstance.cs">
+      <Link>NoSuchInstance.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\NoSuchObject.cs">
+      <Link>NoSuchObject.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Null.cs">
+      <Link>Null.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\ObjectIdentifier.cs">
+      <Link>ObjectIdentifier.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\ObjectIdentifierConverter.cs">
+      <Link>ObjectIdentifierConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\OctetString.cs">
+      <Link>OctetString.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Opaque.cs">
+      <Link>Opaque.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\OperationException.cs">
+      <Link>OperationException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\ReportPdu.cs">
+      <Link>ReportPdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\ResponsePdu.cs">
+      <Link>ResponsePdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Scope.cs">
+      <Link>Scope.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\SearchResult.cs">
+      <Link>SearchResult.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\SecurityParameters.cs">
+      <Link>SecurityParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\AESPrivacyProvider.cs">
+      <Link>Security\AESPrivacyProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\DecryptionException.cs">
+      <Link>Security\DecryptionException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\DefaultAuthenticationProvider.cs">
+      <Link>Security\DefaultAuthenticationProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\DefaultPrivacyProvider.cs">
+      <Link>Security\DefaultPrivacyProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\DESPrivacyProvider.cs">
+      <Link>Security\DESPrivacyProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\IAuthenticationProvider.cs">
+      <Link>Security\IAuthenticationProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\IPrivacyProvider.cs">
+      <Link>Security\IPrivacyProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\MD5AuthenticationProvider.cs">
+      <Link>Security\MD5AuthenticationProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\PrivacyProviderExtension.cs">
+      <Link>Security\PrivacyProviderExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\SaltGenerator.cs">
+      <Link>Security\SaltGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\SHA1AuthenticationProvider.cs">
+      <Link>Security\SHA1AuthenticationProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\User.cs">
+      <Link>Security\User.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Security\UserRegistry.cs">
+      <Link>Security\UserRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Sequence.cs">
+      <Link>Sequence.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\SetRequestPdu.cs">
+      <Link>SetRequestPdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\SnmpException.cs">
+      <Link>SnmpException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\TimeTicks.cs">
+      <Link>TimeTicks.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\TrapV1Pdu.cs">
+      <Link>TrapV1Pdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\TrapV2Pdu.cs">
+      <Link>TrapV2Pdu.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib.WP\Variable.cs">
+      <Link>Variable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\DefinitionType.Serializable.cs">
+      <Link>DefinitionType.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\GenericCode.Serializable.cs">
+      <Link>GenericCode.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\Messaging\ErrorException.Serializable.cs">
+      <Link>Messaging\ErrorException.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\Messaging\TimeoutException.Serializable.cs">
+      <Link>Messaging\TimeoutException.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\ObjectIdentifier.Serializable.cs">
+      <Link>ObjectIdentifier.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\OperationException.Serializable.cs">
+      <Link>OperationException.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\Security\DecryptionException.Serializable.cs">
+      <Link>Security\DecryptionException.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\Security\Levels.cs">
+      <Link>Security\Levels.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\SnmpType.cs">
+      <Link>SnmpType.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLib\VersionCode.cs">
+      <Link>VersionCode.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\SharpSnmpLib.WP\license.txt">
+      <Link>license.txt</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="726ce0de-8188-4a28-b9eb-8fd42fbb1bc2" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

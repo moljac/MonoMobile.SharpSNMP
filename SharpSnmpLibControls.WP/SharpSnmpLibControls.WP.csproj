@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44C46F5E-C84B-41B7-998D-AE3FBA09FC16}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lextm.SharpSnmpLib</RootNamespace>
+    <AssemblyName>SharpSnmpLib.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Messaging\AgentFoundEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\DefaultListenerAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\Discoverer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ExceptionRaisedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\IListenerAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\IListenerBinding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\Listener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ListenerBinding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\Manager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ManagerV1ListenerAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ManagerV2ListenerAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\ManagerV3ListenerAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\MessageParams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\MessageReceivedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\Messenger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\NumberGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\PortInUseException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messaging\WalkMode.Silverlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysContact.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysDescr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysObjectId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysORDescr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysORID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysORIndex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysORLastChange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysORTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysORUpTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\SysUpTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\AccessFailureException.Silverlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\ComposedMembershipProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\EngineGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\GetBulkMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\GetMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\GetNextMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\GetNextV1MessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\GetV1MessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\HandlerMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\ILogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\IMembershipProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\IMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\InformMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\ISnmpObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\MessageHandlerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\NormalSnmpContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\NullMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\ObjectStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\ScalarObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SecureSnmpContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SetMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SetV1MessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SnmpApplication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SnmpApplicationFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SnmpContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SnmpContextFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SnmpEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\SnmpObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\TableObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\TrapV1MessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\TrapV2MessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\Version1MembershipProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\Version2MembershipProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline\Version3MembershipProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SharpSnmpLib.WP\SharpSnmpLib.WP.csproj">
+      <Project>{726CE0DE-8188-4A28-B9EB-8FD42FBB1BC2}</Project>
+      <Name>SharpSnmpLib.WP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

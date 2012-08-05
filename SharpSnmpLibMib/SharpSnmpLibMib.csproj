@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBE20411-5DB7-487D-825D-7694267BB6F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lextm.SharpSnmpLib</RootNamespace>
+    <AssemblyName>SharpSnmpLib.Mib</AssemblyName>
+    <DocumentationFile>..\bin\SharpSnmpLib.Mib.xml</DocumentationFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SourceAnalysisOverrideSettingsFile>D:\sharpsnmplib_svn\SharpSnmpLib\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <RunSourceAnalysis>False</RunSourceAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\AgentCapabilities.cs">
+      <Link>Mib\AgentCapabilities.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Assembler.cs">
+      <Link>Mib\Assembler.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Choice.cs">
+      <Link>Mib\Choice.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\DefaultObjectRegistry.cs">
+      <Link>Mib\DefaultObjectRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Definition.cs">
+      <Link>Mib\Definition.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Exports.cs">
+      <Link>Mib\Exports.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Imports.cs">
+      <Link>Mib\Imports.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ImportsFrom.cs">
+      <Link>Mib\ImportsFrom.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Integer.cs">
+      <Link>Mib\Integer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ITypeAssignment.cs">
+      <Link>Mib\ITypeAssignment.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Lexer.cs">
+      <Link>Mib\Lexer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Macro.cs">
+      <Link>Mib\Macro.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\MibDocument.cs">
+      <Link>Mib\MibDocument.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\MibException.cs">
+      <Link>Mib\MibException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\MibModule.cs">
+      <Link>Mib\MibModule.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ModuleCompliance.cs">
+      <Link>Mib\ModuleCompliance.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ModuleIdentity.cs">
+      <Link>Mib\ModuleIdentity.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ModuleLoader.cs">
+      <Link>Mib\ModuleLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\NotificationGroup.cs">
+      <Link>Mib\NotificationGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\NotificationType.cs">
+      <Link>Mib\NotificationType.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ObjectGroup.cs">
+      <Link>Mib\ObjectGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ObjectIdentity.cs">
+      <Link>Mib\ObjectIdentity.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ObjectRegistryBase.cs">
+      <Link>Mib\ObjectRegistryBase.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ObjectTree.cs">
+      <Link>Mib\ObjectTree.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ObjectType.cs">
+      <Link>Mib\ObjectType.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\OidValueAssignment.cs">
+      <Link>Mib\OidValueAssignment.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Parser.cs">
+      <Link>Mib\Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\ReloadableObjectRegistry.cs">
+      <Link>Mib\ReloadableObjectRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Sequence.cs">
+      <Link>Mib\Sequence.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\Symbol.cs">
+      <Link>Mib\Symbol.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\TextualConvention.cs">
+      <Link>Mib\TextualConvention.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\TrapType.cs">
+      <Link>Mib\TrapType.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSnmpLibMib.WP\Mib\TypeAssignment.cs">
+      <Link>Mib\TypeAssignment.cs</Link>
+    </Compile>
+    <Compile Include="Mib\DefaultObjectRegistry.LoadDefaultModules.cs" />
+    <Compile Include="Mib\MibException.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpSnmpLib\SharpSnmpLib.csproj">
+      <Project>{286DE6DB-8F95-4BD4-86A2-86488D2E0EE1}</Project>
+      <Name>SharpSnmpLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Lextm.SharpSnmpLib.Mib</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SNMPV2-CONF.module" />
+    <None Include="Resources\SNMPV2-MIB.module" />
+    <None Include="Resources\SNMPV2-SMI.module" />
+    <None Include="Resources\SNMPV2-TC.module" />
+    <None Include="Resources\SNMPV2-TM.module" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <UsingTask AssemblyFile="..\lib\GendarmeMsBuild.dll" TaskName="GendarmeMsBuild.Gendarme" />
+  <Target Name="AfterBuild">
+    <Gendarme Condition=" '$(Configuration)' == 'Release' AND '$(OS)' == 'Windows_NT' " Assemblies="$(TargetPath)" WarningsAsErrors="False" IntegrateWithVisualStudio="True" GendarmeIgnoreFilename="gendarme.ignore" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="406429ce-ba82-42d5-b2fb-79295f20de19" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
